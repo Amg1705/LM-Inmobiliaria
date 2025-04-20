@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "titulo": "Casa Moderna en el Centro",
+        "descripcion": "Amplia casa de 3 dormitorios con diseño moderno, ubicada en el corazón de la ciudad.",
+        "precio": 250000,
+        "ubicacion": "Calle Principal 123, Ciudad",
+        "imagen": "assets/images/casa1.jpg",
+        "habitaciones": 3,
+        "baños": 2,
+        "superficie": 150,
+        "añoConstruccion": 2018,
+        "estado": "Excelente",
+        "caracteristicas": ["Garaje", "Jardín", "Cocina equipada", "Aire acondicionado"]
+    },
+    {
+        "id": 2,
+        "titulo": "Apartamento con Vista al Mar",
+        "descripcion": "Hermoso apartamento con terraza y vistas panorámicas al océano.",
+        "precio": 180000,
+        "ubicacion": "Avenida Costera 456, Playa",
+        "imagen": "assets/images/apartamento))",
+        "habitaciones": 2,
+        "baños": 1,
+        "superficie": 80,
+        "añoConstruccion": 2020,
+        "estado": "Bueno",
+        "caracteristicas": ["Terraza", "Ascensor", "Vistas al mar"]
+    },
+    {
+        "id": 3,
+        "titulo": "Chalet en las Afueras",
+        "descripcion": "Chalet rústico con gran terreno, ideal para familias grandes.",
+        "precio": 320000,
+        "ubicacion": "Carretera Norte Km 5, Rural",
+        "imagen": "assets/images/chalet1.jpg",
+        "habitaciones": 4,
+        "baños": 3,
+        "superficie": 200,
+        "añoConstruccion": 2015,
+        "estado": "Muy bueno",
+        "caracteristicas": ["Piscina", "Garaje doble", "Chimenea", "Terreno amplio"]
+    },
+    {
+        "id": 4,
+        "titulo": "Piso en Zona Residencial",
+        "descripcion": "Piso luminoso en barrio tranquilo, cerca de colegios y parques.",
+        "precio": 150000,
+        "ubicacion": "Calle Jardín 789, Residencial",
+        "imagen": "assets/images/piso1.jpg",
+        "habitaciones": 2,
+        "baños": 1,
+        "superficie": 90,
+        "añoConstruccion": 2010,
+        "estado": "Bueno",
+        "caracteristicas": ["Balcón", "Ascensor", "Cerca de transporte público"]
+    },
+    {
+        "id": 5,
+        "titulo": "Villa de Lujo",
+        "descripcion": "Exclusiva villa con piscina privada y amplios jardines.",
+        "precio": 750000,
+        "ubicacion": "Urbanización El Paraíso, Ciudad",
+        "imagen": "assets/images/villa1.jpg",
+        "habitaciones": 5,
+        "baños": 4,
+        "superficie": 350,
+        "añoConstruccion": 2022,
+        "estado": "Nuevo",
+        "caracteristicas": ["Piscina privada", "Gimnasio", "Domótica", "Jardín paisajista"]
+    }
+]

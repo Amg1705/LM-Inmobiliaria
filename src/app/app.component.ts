@@ -6,7 +6,7 @@ import { PiedepaginaComponent } from './componentes/piedepagina/piedepagina.comp
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule, NavbarComponent, PiedepaginaComponent],
+  imports: [RouterModule, NavbarComponent, PiedepaginaComponent, ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

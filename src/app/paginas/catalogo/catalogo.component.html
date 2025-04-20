@@ -1,1 +1,12 @@
-<p>catalogo works!</p>
+<div class="grid">
+    <div *ngFor="let propiedad of propiedades" class="card">
+      <img [src]="propiedad.imagen" alt="{{ propiedad.titulo }}" class="card-img">
+      <h2 class="card-title">{{ propiedad.titulo }}</h2>
+      <p class="card-description">{{ propiedad.descripcion | slice:0:100 }}...</p>
+      <p class="card-price">{{ propiedad.precio | currency:'USD' }}</p>
+      <p class="card-location"><strong>Ubicación:</strong> {{ propiedad.ubicacion }}</p>
+      <div class="card-button-container">
+        <button [routerLink]="['/detalle', propiedad.id]" class="card-button">Ver más</button>
+      </div>
+    </div>
+  </div>
