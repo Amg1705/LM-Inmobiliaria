@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-iniciarsesion',
-  imports: [],
+  selector: 'app-iniciosesion',
   templateUrl: './iniciarsesion.component.html',
-  styleUrl: './iniciarsesion.component.css'
+  styleUrls: ['./iniciarsesion.component.css']
 })
-export class IniciarsesionComponent {
-
+export class IniciosesionComponent {
+  // Aquí podrías agregar lógica para manejar el formulario más adelante
 }
