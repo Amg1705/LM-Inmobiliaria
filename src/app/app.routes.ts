@@ -13,4 +13,11 @@ export const routes: Routes = [
   { path: 'catalogo', component: CatalogoComponent },
   { path: 'pago', component: PagoComponent },
   { path: 'registro', component: RegistroComponent },
+  {
+    path: 'detalle/:id',
+    loadComponent: () =>
+      import('./paginas/detalle-propiedad/detalle-propiedad.component').then(
+        m => m.DetallePropiedadComponent
+      )
+  }
 ];
