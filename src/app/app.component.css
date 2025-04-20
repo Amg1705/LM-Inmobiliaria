@@ -10,6 +10,7 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin-top: 70px;
 }
 
 /* El contenido ocupa todo el espacio posible y empuja al footer hacia abajo */
