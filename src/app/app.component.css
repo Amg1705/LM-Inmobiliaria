@@ -1,11 +1,11 @@
-/* Asegura altura total de la página */
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* El contenedor principal */
+
 .page-wrapper {
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@ html, body {
   margin-top: 70px;
 }
 
-/* El contenido ocupa todo el espacio posible y empuja al footer hacia abajo */
+
 .page-content {
   flex: 1;
 }
