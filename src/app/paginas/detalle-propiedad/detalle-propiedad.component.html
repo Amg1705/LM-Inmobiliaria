@@ -1,10 +1,11 @@
-<div *ngIf="propiedad" class="detalle-container">
-    <h1>{{ propiedad.titulo }}</h1>
-    <img [src]="propiedad.imagen" alt="{{ propiedad.titulo }}" class="detalle-img">
-    <p><strong>Descripción:</strong> {{ propiedad.descripcion }}</p>
-    <p><strong>Precio:</strong> {{ propiedad.precio | currency:'EUR' }}</p>
-    <p><strong>Ubicación:</strong> {{ propiedad.ubicacion }}</p>
-  </div>
+<div *ngIf="propiedad" class="detalle-propiedad">
+  <h1>{{ propiedad.titulo }}</h1>
+  <img [src]="propiedad.imagen" alt="{{ propiedad.titulo }}">
+  <p><strong>Descripción:</strong> {{ propiedad.descripcion }}</p>
+  <p><strong>Precio:</strong> {{ propiedad.precio | currency:'EUR' }}</p>
+  <p><strong>Ubicación:</strong> {{ propiedad.ubicacion }}</p>
+  <a routerLink="/pago" style="color: #4da3ff;">Comprar Casa</a>
+</div>
   
   <div *ngIf="!propiedad">
     <p>Cargando propiedad...</p>

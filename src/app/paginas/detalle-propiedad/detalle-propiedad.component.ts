@@ -3,11 +3,12 @@ import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { PropiedadesService } from '../../services/propiedad.service';
 import { Propiedad } from '../../models/propiedad';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-detalle-propiedad',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink],
   templateUrl: './detalle-propiedad.component.html',
   styleUrls: ['./detalle-propiedad.component.css']
 })
