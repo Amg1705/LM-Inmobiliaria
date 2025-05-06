@@ -1,53 +1,259 @@
+/* Estilos para la sección Hero */
 .hero {
-    background-image: url('/assets/images/fonod-pagina.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    position: relative;
-    font-family: 'Helvetica Neue', sans-serif;
+  background-image: url('/assets/images/fonod-pagina.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  font-family: 'Helvetica Neue', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Sección Acerca de */
+.about {
+  background-color: #f7f7f7;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.about p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #666;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about button {
+  background-color: #bfa76f;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.about button:hover {
+  background-color: #a88e56;
+}
+
+/* Sección de fondo azul y letras blancas para toda la página */
+body {
+  background-color: #003366; /* Fondo azul oscuro */
+  color: #fff; /* Texto blanco */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.hero {
+  background-image: url('/assets/images/fonod-pagina.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Estilo de la grid de propiedades */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  color: #1f1f1f;
+  margin: 16px;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0 16px 10px;
+}
+
+.card-price {
+  color: #008060;
+  font-weight: bold;
+  margin: 0 16px 6px;
+}
+
+.card-location {
+  color: #333;
+  font-size: 0.9rem;
+  margin: 0 16px 12px;
+}
+
+.card-button-container {
+  margin: 0 16px 16px;
+  margin-top: auto;
+}
+
+.card-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4da3ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #0077cc;
+}
+
+/* Responsive padding */
+@media (max-width: 600px) {
+  .grid {
+    padding: 20px;
   }
-  
-  .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+  .card-img {
+    height: 160px;
   }
-  
-  .content {
-    text-align: center;
-    color: #fff;
-    padding: 2rem;
+
+  .card-title {
+    font-size: 1.2rem;
   }
-  
-  .content h1 {
-    font-size: 3rem;
-    letter-spacing: 2px;
-    font-weight: 300;
-    margin-bottom: 1rem;
+
+  .card-description {
+    font-size: 0.9rem;
   }
-  
-  .content p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  button {
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  
+}

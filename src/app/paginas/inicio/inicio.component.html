@@ -1,10 +1,59 @@
 <section class="hero">
-    <div class="overlay">
-      <div class="content">
-        <h1>Bienvenido a LM Inmobiliaria</h1>
-        <p>Donde el diseño se encuentra con el lujo.</p>
-        <button [routerLink]="'/catalogo'">Explorar propiedades</button>
+  <div class="overlay">
+    <div class="content">
+      <h1>Bienvenido a LM Inmobiliaria</h1>
+      <p>Donde el diseño se encuentra con el lujo.</p>
+      <button [routerLink]="'/catalogo'">Explorar propiedades</button>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="about-content">
+    <h2>Tu nuevo hogar está aquí</h2>
+    <p>En LM Inmobiliaria, nos especializamos en ofrecer propiedades de lujo que cumplen con los más altos estándares de calidad y diseño. Descubre lo mejor del mercado inmobiliario.</p>
+    <button routerLink="/sobre-nosotros">Conócenos</button>
+  </div>
+</section>
+
+
+<section class="grid">
+  <div class="card">
+    <img class="card-img" src="/assets/images/property-1.jpg" alt="Propiedad 1" />
+    <div class="card-content">
+      <h3 class="card-title">Casa de lujo en la playa</h3>
+      <p class="card-description">Disfruta de vistas increíbles y la tranquilidad del mar.</p>
+      <p class="card-price">$2,500,000</p>
+      <p class="card-location">Miami, FL</p>
+      <div class="card-button-container">
+        <button class="card-button" [routerLink]="'/detalle/1'">Ver más</button> 
       </div>
     </div>
-  </section>
+  </div>
 
+  <div class="card">
+    <img class="card-img" src="/assets/images/property-2.jpg" alt="Propiedad 2" />
+    <div class="card-content">
+      <h3 class="card-title">Apartamento moderno en la ciudad</h3>
+      <p class="card-description">Vivienda de lujo con todas las comodidades en el corazón de la ciudad.</p>
+      <p class="card-price">$1,200,000</p>
+      <p class="card-location">New York, NY</p>
+      <div class="card-button-container">
+        <button class="card-button" [routerLink]="'/detalle/2'">Ver más</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img" src="/assets/images/property-3.jpg" alt="Propiedad 3" />
+    <div class="card-content">
+      <h3 class="card-title">Villa privada en las colinas</h3>
+      <p class="card-description">Una propiedad exclusiva en un entorno tranquilo y elegante.</p>
+      <p class="card-price">$3,200,000</p>
+      <p class="card-location">Los Angeles, CA</p>
+      <div class="card-button-container">
+        <button class="card-button" [routerLink]="'/detalle/3'">Ver más</button>
+      </div>
+    </div>
+  </div>
+</section>

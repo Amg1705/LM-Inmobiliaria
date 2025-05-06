@@ -38,6 +38,7 @@
 .detalle-propiedad a {
   display: inline-block;
   margin-top: 25px;
+  margin-right: 10px;
   padding: 12px 25px;
   background-color: #4da3ff;
   color: #fff;
@@ -50,6 +51,11 @@
 
 .detalle-propiedad a:hover {
   background-color: #0077cc;
+}
+
+.btn-volver {
+  background-color: #4da3ff;
+  color: #fff;
 }
 
 @keyframes fadeIn {
@@ -78,6 +84,8 @@
   .detalle-propiedad a {
     width: 100%;
     text-align: center;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 

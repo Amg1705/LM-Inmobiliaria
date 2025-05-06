@@ -4,10 +4,11 @@
   <p><strong>Descripción:</strong> {{ propiedad.descripcion }}</p>
   <p><strong>Precio:</strong> {{ propiedad.precio | currency:'EUR' }}</p>
   <p><strong>Ubicación:</strong> {{ propiedad.ubicacion }}</p>
-  <a routerLink="/pago" style="color: #4da3ff;">Comprar Casa</a>
+  
+  <a routerLink="/pago">Comprar Casa</a>
+  <a routerLink="/catalogo" class="btn-volver">Volver</a>
 </div>
-  
-  <div *ngIf="!propiedad">
-    <p>Cargando propiedad...</p>
-  </div>
-  
+
+<div *ngIf="!propiedad">
+  <p>Cargando propiedad...</p>
+</div>

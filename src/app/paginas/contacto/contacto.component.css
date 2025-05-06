@@ -1,0 +1,131 @@
+.contacto-modern {
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto-encabezado {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.contacto-encabezado h2 {
+  font-size: 2.5rem;
+  color: #bfa76f;
+  margin-bottom: 0.5rem;
+}
+
+.contacto-encabezado p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.contacto-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .contacto-grid {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.contacto-info,
+.contacto-formulario {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.contacto-info h3 {
+  color: #bfa76f;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contacto-info p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.contacto-info .redes {
+  text-align: center;
+}
+
+.contacto-info .redes a {
+  color: #bfa76f;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contacto-info .redes a:hover {
+  text-decoration: underline;
+}
+
+.contacto-formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-formulario label {
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.contacto-formulario input:focus,
+.contacto-formulario textarea:focus {
+  outline: none;
+  border-color: #bfa76f;
+  box-shadow: 0 0 0 2px rgba(191, 167, 111, 0.2);
+}
+
+.contacto-formulario button {
+  padding: 0.75rem 1.5rem;
+  background-color: #bfa76f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.contacto-formulario button:hover {
+  background-color: #a88e56;
+}
