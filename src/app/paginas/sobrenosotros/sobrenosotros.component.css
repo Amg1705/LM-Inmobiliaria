@@ -44,7 +44,7 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsive */
+
 @media (min-width: 768px) {
   .about-content {
     flex-direction: row;

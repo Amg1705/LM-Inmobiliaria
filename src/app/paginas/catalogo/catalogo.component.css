@@ -75,7 +75,7 @@
   background-color: #0077cc;
 }
 
-/* Responsive padding */
+
 @media (max-width: 600px) {
   .grid {
     padding: 20px;
