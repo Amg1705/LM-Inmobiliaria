@@ -18,7 +18,7 @@
 
 .contacto-encabezado h2 {
   font-size: 2.5rem;
-  color: #bfa76f;
+  color: #4da3ff;
   margin-bottom: 0.5rem;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .contacto-info h3 {
-  color: #bfa76f;
+  color: #4da3ff;
   font-size: 1.8rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -73,7 +73,7 @@
 }
 
 .contacto-info .redes a {
-  color: #bfa76f;
+  color: #4da3ff;
   text-decoration: none;
   font-weight: 500;
   margin: 0 0.5rem;
@@ -110,13 +110,13 @@
 .contacto-formulario input:focus,
 .contacto-formulario textarea:focus {
   outline: none;
-  border-color: #bfa76f;
-  box-shadow: 0 0 0 2px rgba(191, 167, 111, 0.2);
+  border-color: #4da3ff;
+  box-shadow: 0 0 0 2px rgba(77, 163, 255, 0.2);
 }
 
 .contacto-formulario button {
   padding: 0.75rem 1.5rem;
-  background-color: #bfa76f;
+  background-color: #4da3ff;
   color: white;
   border: none;
   border-radius: 8px;
@@ -127,5 +127,5 @@
 }
 
 .contacto-formulario button:hover {
-  background-color: #a88e56;
+  background-color: #368de6;
 }
