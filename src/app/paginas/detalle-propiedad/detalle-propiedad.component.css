@@ -1,49 +1,90 @@
 .detalle-propiedad {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.6s ease-in;
+}
+
+.detalle-propiedad h1 {
+  font-size: 2.2rem;
+  color: #1f1f1f;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.detalle-propiedad img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.detalle-propiedad p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.detalle-propiedad strong {
+  color: #222;
+}
+
+.detalle-propiedad a {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background-color: #4da3ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.detalle-propiedad a:hover {
+  background-color: #0077cc;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .detalle-propiedad {
+    padding: 20px;
+    margin: 30px 15px;
   }
-  
+
   .detalle-propiedad h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #2c3e50;
+    font-size: 1.6rem;
   }
-  
+
   .detalle-propiedad img {
-    width: 100%;
-    max-height: 450px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
+    max-height: 250px;
   }
-  
+
   .detalle-propiedad p {
     font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 0.75rem;
-    color: #333;
   }
-  
-  .detalle-propiedad strong {
-    color: #2c3e50;
+
+  .detalle-propiedad a {
+    width: 100%;
+    text-align: center;
   }
-  
-  @media (max-width: 600px) {
-    .detalle-propiedad {
-      padding: 1rem;
-    }
-  
-    .detalle-propiedad h1 {
-      font-size: 1.5rem;
-    }
-  
-    .detalle-propiedad p {
-      font-size: 0.95rem;
-    }
-  }
-  
+}
+
+/* Cargando */
+div:not(.detalle-propiedad) p {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #888;
+  margin-top: 60px;
+}

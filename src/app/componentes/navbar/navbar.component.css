@@ -2,61 +2,97 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1f1f1f;
+  background: linear-gradient(to right, #1f1f1f, #292929);
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   position: fixed;
-  top: 0; 
-  left: 0; 
-  width: 98%; 
-  z-index: 1000; 
+  top: 0;
+  left: 0;
+  width: 98%;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
 }
-  
-  .logo {
-    font-size: 1.6rem;
-    font-weight: bold;
-  }
-  
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4da3ff;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+  position: relative;
+}
+
+.nav-links li a:hover {
+  color: #4da3ff;
+  transform: scale(1.1);
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #4da3ff;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .menu-toggle {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #005c99;
+    flex-direction: column;
+    width: 200px;
     display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
   }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .nav-links {
-      position: absolute;
-      top: 60px;
-      right: 0;
-      background-color: #005c99;
-      flex-direction: column;
-      width: 200px;
-      display: none;
-      padding: 15px;
-    }
-  
-    .nav-links.active {
-      display: flex;
-    }
-  
-    .menu-toggle {
-      display: block;
-    }
+
+  .nav-links.active {
+    display: flex;
   }
-  
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links li a {
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+}
